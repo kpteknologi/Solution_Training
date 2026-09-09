@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37301.10 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebApp_Training", "WebApp_Training\", "{C0198787-2702-46ED-82C2-ADF5E0A57F64}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63181"
+		Debug.AspNetCompiler.PhysicalPath = "WebApp_Training\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63181\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63181"
+		Release.AspNetCompiler.PhysicalPath = "WebApp_Training\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63181\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63181"
+		SlnRelativePath = "WebApp_Training\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebHTML_Training", "WebHTML_Training\", "{01B1BC27-D3E9-409B-99A8-45CA086CCCFF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57419"
+		Debug.AspNetCompiler.PhysicalPath = "WebHTML_Training\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57419\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57419"
+		Release.AspNetCompiler.PhysicalPath = "WebHTML_Training\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57419\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57419"
+		SlnRelativePath = "WebHTML_Training\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0198787-2702-46ED-82C2-ADF5E0A57F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0198787-2702-46ED-82C2-ADF5E0A57F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B1BC27-D3E9-409B-99A8-45CA086CCCFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B1BC27-D3E9-409B-99A8-45CA086CCCFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD737C48-BDE9-42B3-A8CD-BDA7CE020029}
+	EndGlobalSection
+EndGlobal
