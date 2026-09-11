@@ -1,6 +1,7 @@
 ﻿function PageMethod(fn, paramArray, successFn, errorFn, asyncFn) {
     //var pagePath = window.location.pathname;
-    var pagePath = "http://localhost:63181/WebService.asmx";
+    //var pagePath = "http://localhost:63181/WebService.asmx";
+    var pagePath = "https://keiza.apps.com.my/WebApp_Training/WebService.asmx";
 
     //Call the page method
     $.ajax({
