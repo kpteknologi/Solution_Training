@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,16 +39,20 @@ public class MainController
                     query = @" select id, idno, idtype, name, status 
                                from   userprofile 
                                where  idno is not null ";
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = dbConnect.connection;
+
                     if (idno.Length > 0)
                     {
-                        query = query + " and idno = '" + idno + "'";
+                        query = query + " and idno = ?idno ";
+                        cmd.Parameters.Add("?idno", MySqlDbType.VarChar).Value = idno;
                     }
                     if (idtype.Length > 0)
                     {
-                        query = query + " and idtype = '" + idtype + "'";
+                        query = query + " and idtype = ?idtype ";
+                        cmd.Parameters.Add("?idtype", MySqlDbType.VarChar).Value = idtype;
                     }
-                    //WriteToLogFile("MainController-getUserStatus: [SQL] " + query);
-                    MySqlCommand cmd = new MySqlCommand(query, dbConnect.connection);
+                    cmd.CommandText = query;
                     MySqlDataReader dataReader = cmd.ExecuteReader();
                     while (dataReader.Read())
                     {
@@ -92,12 +96,15 @@ public class MainController
                     query = @" select id, idno, idtype, name, status 
                                from   userprofile 
                                where  idno is not null ";
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = dbConnect.connection;
+
                     if (id.Length > 0)
                     {
-                        query = query + " and id = " + id;
+                        query = query + " and id = ?id ";
+                        cmd.Parameters.Add("?id", MySqlDbType.Int64).Value = id;
                     }
-                    //WriteToLogFile("MainController-getUserStatus: [SQL] " + query);
-                    MySqlCommand cmd = new MySqlCommand(query, dbConnect.connection);
+                    cmd.CommandText = query;
                     MySqlDataReader dataReader = cmd.ExecuteReader();
                     if (dataReader.Read())
                     {
